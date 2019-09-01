@@ -1,0 +1,21 @@
+[user]
+   email =
+   name =
+[alias]
+   cfg = config --global
+   cm = commit
+   ps = push
+   pl = pull
+   a = add
+   b = branch
+   rmt = remote -v
+   ch = checkout
+   m = merge
+   df = diff
+   s = status
+   f = fetch --all -p
+   rsh = reset --hard
+   fp = fetch origin+refs/pull*:refs/remotes/pull/*
+   l = log
+   st = status
+   ft = fetch
