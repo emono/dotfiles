@@ -25,7 +25,7 @@ bindkey -e
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
 # node
-export PATH=$PATH:/Users/shotaro/.nodebrew/current/bin
+export PATH=$HOME/.nodebrew/current/bin:$GOPATH
 # mysql
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 # zprofile
