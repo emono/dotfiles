@@ -21,11 +21,13 @@ function peco-history-selection() {
 zle -N peco-history-selection
 bindkey '^R' peco-history-selection
 bindkey -e
+# path
+export PATH="$PATH:/bin:/usr/bin:/usr/local/bin"
 # zsh
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
 # node
-export PATH=$HOME/.nodebrew/current/bin:$GOPATH
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 # mysql
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 # zprofile
