@@ -32,18 +32,23 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 # zprofile
 source ~/.zprofile
-
-## Go 環境設定
-if [ -x "`which go`" ]; then
-    export GOPATH=$HOME/dev/go_page
-    export PATH=$PATH:$GOPATH/bin
-fi
-
-export PATH="$HOME/.goenv/bin:$PATH"
-eval "$(goenv init -)"
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 # git補完
 fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 
 autoload -U compinit
 compinit -u
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/shoutaro/.nodebrew/node/v9.11.1/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/shoutaro/.nodebrew/node/v9.11.1/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/shoutaro/.nodebrew/node/v9.11.1/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/shoutaro/.nodebrew/node/v9.11.1/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/shoutaro/.nodebrew/node/v9.11.1/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/shoutaro/.nodebrew/node/v9.11.1/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
