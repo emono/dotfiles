@@ -6,10 +6,14 @@
     "editor.fontSize": 13,
     "editor.fontFamily": "hack, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontWeight": "600",
-    "git.autofetch": true,
     "editor.tabSize": 2,
-    "git.confirmSync": false,
     "editor.renderWhitespace": "all",
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "ruby.intellisense": "rubyLocate",
+    "ruby.useLanguageServer": true,
+    "solargraph.definitions": true,
+    "solargraph.diagnostics": true,
+    "git.confirmSync": true,
+    "git.autofetch": true
 }
